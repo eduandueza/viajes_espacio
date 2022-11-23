@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(3deg, rgba(97,14,198,1) 14%, rgba(51,20,71,1) 42%, rgba(5,5,5,1) 100%);
+    background-attachment: fixed
+}
+
+div ul li{
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+
+div ul li a{
+    color: rgb(255, 255, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    padding: 3px;   
+}
+
+
+div ul li a:hover{
+    background: #9e1771;
+    box-shadow: 0 0 5px #9e1771, 0 0 25px #9e1771, 0 0 50px #9e1771, 0 0 200px #9e1771;
+}
+
+
+.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+.titulos1{
+    color:#836099;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 3em;
+    text-align: center;
+} 
+
+
+.titulos2{
+    color:#705481;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}  
+
+
+.textos{
+    padding-left: 3rem;
+}
+
+.main__seccion_cajita{
+    background-image: url(../assets/images/hombre-mirando-espacio.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.lanzamientos{
+    margin-left: 3rem;
+}
+
+
+.lanzamientos__div__tablas{
+    border-style: solid;
+}
+
+.formularioCompleto{
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+ footer{
+    background-color: rgb(16, 16, 128);
+    line-height: 15px;
+    text-align: center;
+ }
