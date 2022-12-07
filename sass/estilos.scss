@@ -1,0 +1,336 @@
+@import "reset";
+@import "body";
+@import "header";
+@import "footer";
+
+// div ul li a{
+//     color: rgb(255, 255, 255);
+//     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+//     font-style: normal;
+//     font-size: 20px;
+//     text-decoration: none;
+//     border-radius: 0.25rem;
+//     padding: 3px;   
+// }
+
+
+// div ul li a:hover{
+//     background: #9e1771;
+//     box-shadow: 0 0 5px #9e1771, 0 0 25px #9e1771, 0 0 50px #9e1771, 0 0 200px #9e1771;
+// }
+
+
+.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+.titulos1{
+    color:#1f1b20;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 1px 1px 10px white;
+} 
+
+
+.titulos2{
+    color:#705481;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}  
+
+
+.textos{
+    padding-left: 3rem;
+    text-align: center;
+    
+}
+.p{
+    font-size: 1.5rem;
+}
+
+.main__seccion_cajita{
+    background-image: url(../assets/images/hombre-mirando-espacio.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height:800px;
+    .main__seccion_cajita_subtitulo{
+        background-color: #d3d3d3;
+        width: 60%;
+        height: 18%;
+        margin-left: 5rem;
+        overflow: hidden;
+        transition: 0.8s;
+        object-fit: cover;
+    }&:hover{
+        transform: scale(1.2);
+    }
+    .main__seccion_cajita_subtitulo2{
+        background-color: #d3d3d3;
+        width: 60%;
+        height: 15%;
+        margin-left: 20rem;
+        overflow: hidden;
+        transition: 0.8s;
+        object-fit: cover;
+    }&:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+// .main__seccion_cajita_subtitulo{
+//     background-color: #d3d3d3;
+//     width: 60%;
+//     height: 18%;
+//     margin-left: 5rem;
+//     overflow: hidden;
+//     transition: 0.8s;
+//     object-fit: cover;
+// }
+// .main__seccion_cajita_subtitulo:hover{
+//     transform: scale(1.2);
+// }
+
+// .main__seccion_cajita_subtitulo2{
+//     background-color: #d3d3d3;
+//     width: 60%;
+//     height: 15%;
+//     margin-left: 20rem;
+//     overflow: hidden;
+//     transition: 0.8s;
+//     object-fit: cover;
+// }
+// .main__seccion_cajita_subtitulo2:hover{
+//     transform: scale(1.2);
+// }
+
+.foto_contacto{
+    background-image: url(../assets/images/comunicacion-usuarios.jpg);
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+
+.eventos {
+    background-image: url(../assets/images/viajes.jpg);
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+.tecnologia {
+    background-image: url(../assets/images/naves.jpg);
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+.equipo {
+    background-image: url(../assets/images/equipos-trabajando.jpg);
+    background-position-x: center;
+    width: 100vg;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+#equipo-fila{
+    border-radius: 10px;
+}
+
+#local {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 300px; 
+}
+
+.carousel-item{
+    height: 50vh;
+    .carousel-item img{
+        object-fit: cover;
+        height: 90%;
+    }    
+}
+
+// .carousel-item img{
+//     object-fit: cover;
+//     height: 90%;
+// }
+
+.mapa {
+    width:100%;
+    height:500px;
+}
+
+.formulario {
+    background-image: url(../assets/images/foto-formulario.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.texto_form{
+    text-shadow: 1px 1px 5px rgb(211, 83, 162);
+    font-style: oblique;
+    color: #f3f3f3;
+}
+
+.eventos_tabla{
+    margin: 3rem 3rem;
+    .eventos_tabla iframe{
+        height: 40vh;
+    }
+}
+
+// .eventos_tabla iframe{
+//     height: 40vh;
+// }
+.card-equipo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#bordes{
+    background-color: #d2c2d8;
+    box-shadow: 0px 0px 8px 2px #000;
+    padding: 1rem 1rem;
+}
+
+
+#contenedorAnim{
+overflow: hidden;
+}
+
+
+// footer i{
+//     width: 30px;
+//     margin: 10px;
+//     margin-top: 20px;
+//     margin-bottom: 17px;
+//     transition: transform 0.5s ease;
+//     font-size: 30px;
+//     color:#742574;
+
+// }
+
+// footer i:hover{
+//     animation: zoom-in-zoom-out 1s;
+// }
+
+// footer p{
+//     color:#f3f3f3;
+//     text-align:center;
+// }
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    .main__seccion_cajita_subtitulo{
+        display: block;
+        
+    }
+    .main__seccion_cajita_subtitulo2{
+        margin-left: 10rem;
+        display: block;
+    }
+    .titulos2{
+        font-size: 1.5rem;
+    }
+    .textos{
+        font-size: 0.9rem;
+    }
+    .carousel-item{
+        height: 40vh;
+    }
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) { 
+    .main__seccion_cajita .foto_contacto .tecnologia .eventos .equipo {
+        max-width:80% !important;
+    }
+    .main__seccion_cajita_subtitulo{
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        max-width: 80%;
+    }
+    .main__seccion_cajita_subtitulo2{
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        max-width: 70%;
+    }
+    .titulos1{
+        font-size: 2em;
+        text-align: center;
+        text-shadow: 1px 1px 5px white;
+    }
+
+    .titulos2{
+        font-size: 1.3rem;
+    }
+    .textos{
+        font-size: 0.8rem;
+    }
+    .carousel-item{
+        height: 30vh;
+    }
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    .titulos1{
+        font-size: 2em;
+        text-align: center;
+        text-shadow: 1px 1px 5px white;
+    }
+    .main__seccion_cajita .eventos {
+       max-width:500px;
+        background-repeat: no-repeat;
+        
+    }
+    .main__seccion_cajita_subtitulo{
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        max-width: 80%;
+    }
+    .main__seccion_cajita_subtitulo2{
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        max-width: 70%;
+        height: 20%;
+    }
+    .titulos2{
+        font-size: 1.3rem;
+    }
+    .textos{
+        font-size: 0.8rem;
+    }
+    .carousel-item{
+        height: 25vh;
+    }
+
+}
+}

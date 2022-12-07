@@ -1,0 +1,39 @@
+footer 
+    {
+        i{
+        width: 30px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 17px;
+        transition: transform 0.5s ease;
+        font-size: 30px;
+        color:#742574;
+        &:hover{
+            animation: zoom-in-zoom-out 1s;
+        }
+        p{
+            color:#f3f3f3;
+            text-align:center;
+        }
+    }
+}
+
+// footer i:hover{
+//     animation: zoom-in-zoom-out 1s;
+// }
+
+// footer p{
+//     color:#f3f3f3;
+//     text-align:center;
+// }
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
