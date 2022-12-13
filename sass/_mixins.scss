@@ -1,6 +1,0 @@
-@mixin mixinCaja ($b-position:center,$ancho,$alto,$b-repeat:no-repeat) {
-    background-position: $b-position;
-    width: $ancho;
-    height: $alto;
-    background-repeat: $b-repeat;
-}

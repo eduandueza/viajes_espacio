@@ -130,7 +130,7 @@ footer{
 .equipo {
   background-image: url(../assets/images/equipos-trabajando.jpg);
   background-position-x: center;
-  width: 100vg;
+  width: 100vh;
   height: 500px;
   background-repeat: no-repeat; }
 

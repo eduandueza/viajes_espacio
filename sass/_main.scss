@@ -1,3 +1,20 @@
+$text-align-center:center;
+$font-style-normal: normal;
+$ancho:100%;
+$color-anim:#9e1771;
+$color-h1:#1f1b20;
+$color-h2:#705481;
+$color-footer: #cccaca;
+
+/*MIXIN*/
+@mixin mixinCaja($b-position:center,$ancho,$alto,$b-repeat:no-repeat){
+    background-position:$b-position;
+    width:$ancho;
+    height:$alto;
+    background-repeat:$b-repeat;
+}
+/**/
+
 .main__seccion_cajita{
     background-image: url(../assets/images/hombre-mirando-espacio.jpg);
     background-position: center;
@@ -5,25 +22,24 @@
     width: $ancho;
     height:800px;
 }
-
 .foto_contacto{
-    background-image: url(../assets/images/comunicacion-usuarios.jpg);
-    @include mixinCaja ($b-position,$ancho,600px,$b-repeat);
+    background-image:url(../assets/images/comunicacion-usuarios.jpg);
+    @include mixinCaja(center,100%,600px,no-repeat);
 }
 
 .eventos {
-    background-image: url(../assets/images/viajes.jpg);
-    @include mixinCaja ($b-position,$ancho,600px,$b-repeat);
+    background-image:url(../assets/images/viajes.jpg);
+    @include mixinCaja(center,100%,600px,no-repeat);
 }
 
 .tecnologia {
     background-image: url(../assets/images/naves.jpg);
-    @include mixinCaja ($b-position,$ancho,800px,$b-repeat);
+    @include mixinCaja(center,100%,600px,no-repeat);
 }
 
 .equipo {
     background-image: url(../assets/images/equipos-trabajando.jpg);
-    @include mixinCaja ($b-position,$ancho,500px,$b-repeat);
+    @include mixinCaja(center,100%,500px,no-repeat);
 }
 
 .formulario {
