@@ -1,0 +1,110 @@
+$text-align-center:center;
+$font-style-normal: normal;
+$ancho:100%;
+$color-anim:#9e1771;
+$color-h1:#1f1b20;
+$color-h2:#705481;
+$color-footer: #cccaca;
+
+/*MAPS*/
+$imagen:(
+    display: block,
+    margin-left: auto,
+    margin-right: auto,
+    width: $ancho
+);
+/**/
+.titulos1{
+    color:$color-h1;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: $font-style-normal;
+    font-size: 4rem;
+    text-align: $text-align-center;
+    text-shadow: 1px 1px 10px white;
+} 
+
+
+.titulos2{
+    color:$color-h2;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: $font-style-normal;
+    font-size: 30px;
+    text-align: $text-align-center;
+}  
+
+
+.textos{
+    padding-left: 3rem;
+    text-align: $text-align-center;
+    
+}
+.p{
+    font-size: 1.5rem;
+}
+
+.picture{
+    display: map-get($imagen,block);
+    margin-left: map-get($imagen,auto );
+    margin-right: map-get($imagen,auto);
+    width:map-get(imagen,$ancho);
+}
+
+.texto_form{
+    text-shadow: 1px 1px 5px rgb(211, 83, 162);
+    font-style: oblique;
+    color: #f3f3f3;
+}
+.texto-footer{
+    color:$color-footer;
+}
+
+.titulos2{
+    font-size: 1.5rem;
+}
+.textos{
+    font-size: 0.9rem;
+}
+.carousel-item{
+    height: 40vh;
+}
+
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+@media (max-width:768px) { 
+.titulos1{
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px 5px white;
+}
+
+.titulos2{
+    font-size: 1.3rem;
+}
+.textos{
+    font-size: 0.8rem;
+}
+.carousel-item{
+    height: 30vh;
+}
+}
+
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    .titulos1{
+        font-size: 2em;
+        text-align: center;
+        text-shadow: 1px 1px 5px white;
+    }
+    .titulos2{
+        font-size: 1.3rem;
+    }
+    .textos{
+        font-size: 0.8rem;
+    }
+    .carousel-item{
+        height: 25vh;
+    }
+
+}

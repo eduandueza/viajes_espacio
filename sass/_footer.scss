@@ -1,5 +1,19 @@
-footer 
-    {
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+footer{
+    background: #000000;
+    min-height: 100px;;
+    text-align: center;
         i{
         width: 30px;
         margin: 10px;
@@ -18,22 +32,3 @@ footer
     }
 }
 
-// footer i:hover{
-//     animation: zoom-in-zoom-out 1s;
-// }
-
-// footer p{
-//     color:#f3f3f3;
-//     text-align:center;
-// }
-@keyframes zoom-in-zoom-out {
-    0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1.5, 1.5);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }

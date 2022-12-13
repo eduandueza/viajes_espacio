@@ -23,19 +23,24 @@ div ul li {
       background: #9e1771;
       box-shadow: 0 0 5px #9e1771, 0 0 25px #9e1771, 0 0 50px #9e1771, 0 0 200px #9e1771; }
 
-footer i {
-  width: 30px;
-  margin: 10px;
-  margin-top: 20px;
-  margin-bottom: 17px;
-  transition: transform 0.5s ease;
-  font-size: 30px;
-  color: #742574; }
-  footer i:hover {
-    animation: zoom-in-zoom-out 1s; }
-  footer i p {
-    color: #f3f3f3;
-    text-align: center; }
+
+footer{
+  background: #000000;
+  min-height: 100px;;
+  text-align: center;}  
+  footer i {
+    width: 30px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 17px;
+    transition: transform 0.5s ease;
+    font-size: 30px;
+    color: #742574; }
+    footer i:hover {
+      animation: zoom-in-zoom-out 1s; }
+    footer i p {
+      color: #f3f3f3;
+      text-align: center; }
 
 @keyframes zoom-in-zoom-out {
   0% {
@@ -73,13 +78,7 @@ footer i {
 .p {
   font-size: 1.5rem; }
 
-.main__seccion_cajita {
-  background-image: url(../assets/images/hombre-mirando-espacio.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  width: 100%;
-  height: 800px; }
-  .main__seccion_cajita .main__seccion_cajita_subtitulo {
+  .main__seccion_cajita_subtitulo {
     background-color: #d3d3d3;
     width: 60%;
     height: 18%;
@@ -87,9 +86,9 @@ footer i {
     overflow: hidden;
     transition: 0.8s;
     object-fit: cover; }
-  .main__seccion_cajita:hover {
+  .main__seccion_cajita_subtitulo:hover {
     transform: scale(1.2); }
-  .main__seccion_cajita .main__seccion_cajita_subtitulo2 {
+  .main__seccion_cajita_subtitulo2 {
     background-color: #d3d3d3;
     width: 60%;
     height: 15%;
@@ -97,9 +96,16 @@ footer i {
     overflow: hidden;
     transition: 0.8s;
     object-fit: cover; }
-  .main__seccion_cajita:hover {
+    .main__seccion_cajita_subtitulo2:hover {
     transform: scale(1.2); }
 
+.main__seccion_cajita {
+  background-image: url(../assets/images/hombre-mirando-espacio.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 800px; }
+    
 .foto_contacto {
   background-image: url(../assets/images/comunicacion-usuarios.jpg);
   background-position: center;

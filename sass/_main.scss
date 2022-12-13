@@ -1,0 +1,147 @@
+.main__seccion_cajita{
+    background-image: url(../assets/images/hombre-mirando-espacio.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    width: $ancho;
+    height:800px;
+}
+
+.foto_contacto{
+    background-image: url(../assets/images/comunicacion-usuarios.jpg);
+    @include mixinCaja ($b-position,$ancho,600px,$b-repeat);
+}
+
+.eventos {
+    background-image: url(../assets/images/viajes.jpg);
+    @include mixinCaja ($b-position,$ancho,600px,$b-repeat);
+}
+
+.tecnologia {
+    background-image: url(../assets/images/naves.jpg);
+    @include mixinCaja ($b-position,$ancho,800px,$b-repeat);
+}
+
+.equipo {
+    background-image: url(../assets/images/equipos-trabajando.jpg);
+    @include mixinCaja ($b-position,$ancho,500px,$b-repeat);
+}
+
+.formulario {
+    background-image: url(../assets/images/foto-formulario.jpeg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.carousel-item{
+    height: 50vh;
+    .carousel-item img{
+        object-fit: cover;
+        height:90%;
+    }    
+}
+.eventos_tabla{
+    margin: 3rem 3rem;
+    .eventos_tabla iframe{
+        height: 40vh;
+    }
+}
+
+.main__seccion_cajita_subtitulo{
+    background-color: #d3d3d3;
+    width:60%;
+    height: 18%;
+    margin-left: 5rem;
+    overflow: hidden;
+    transition: 0.8s;
+    object-fit: cover;
+    &:hover{
+    transform: scale(1.2);
+    }
+}
+.main__seccion_cajita_subtitulo2{
+    background-color: #d3d3d3;
+    width: 60%;
+    height: 15%;
+    margin-left: 20rem;
+    overflow: hidden;
+    transition: 0.8s;
+    object-fit: cover;
+    &:hover{
+    transform: scale(1.2);
+    }
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    .main__seccion_cajita_subtitulo{
+        display: block;
+        
+    }
+    .main__seccion_cajita_subtitulo2{
+        margin-left: 10rem;
+        display: block;
+    }
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) { 
+    .main__seccion_cajita {
+        background-image: url(../assets/images/hombre-mirando-espacio.jpg);
+        max-width:$ancho !important;
+    }
+    .foto_contacto {
+        background-image: url(../assets/images/comunicacion-usuarios.jpg);
+        max-width:$ancho !important;
+    }
+    .tecnologia{
+        background-image: url(../assets/images/naves.jpg);
+        max-width:$ancho !important;
+    }
+    .eventos{
+        background-image: url(../assets/images/viajes.jpg);
+        max-width:$ancho !important;
+    }
+    .equipo {
+        background-image: url(../assets/images/equipos-trabajando.jpg);
+        max-width:$ancho !important;
+    }
+    .main__seccion_cajita_subtitulo{
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        max-width: 80%;
+    }
+    .main__seccion_cajita_subtitulo2{
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        max-width: 70%;
+    }
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    .main__seccion_cajita .eventos {
+       max-width:500px;
+        background-repeat: no-repeat;
+        
+    }
+    .main__seccion_cajita_subtitulo{
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        max-width: 80%;
+    }
+    .main__seccion_cajita_subtitulo2{
+        display: flex;
+        flex-direction: column;
+        flex-basis: content;
+        max-width: 70%;
+        height: 20%;
+    }
+
+}

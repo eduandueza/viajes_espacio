@@ -1,17 +1,21 @@
-div ul li{
-    display: inline-block;
-    margin-left: 4rem;
-     a{
-        color: rgb(255, 255, 255);
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-        font-style: normal;
-        font-size: 20px;
-        text-decoration: none;
-        border-radius: 0.25rem;
-        padding: 3px;   
-        &:hover{
-        background: #9e1771;
-        box-shadow: 0 0 5px #9e1771, 0 0 25px #9e1771, 0 0 50px #9e1771, 0 0 200px #9e1771;
-    }
-} 
+div{
+    ul{ 
+        li{
+            display: inline-block;
+            margin-left: 4rem;
+            a{
+                color: rgb(255, 255, 255);
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+                font-style: normal;
+                font-size: 20px;
+                text-decoration: none;
+                border-radius: 0.25rem;
+                padding: 3px;   
+                &:hover{
+                background: #9e1771;
+                box-shadow: 0 0 5px #9e1771, 0 0 25px #9e1771, 0 0 50px #9e1771, 0 0 200px #9e1771;
+                }
+            }
+        }
+    } 
 }
