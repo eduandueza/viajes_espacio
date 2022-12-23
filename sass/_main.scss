@@ -2,9 +2,6 @@ $text-align-center:center;
 $font-style-normal: normal;
 $ancho:100%;
 $color-anim:#9e1771;
-$color-h1:#1f1b20;
-$color-h2:#705481;
-$color-footer: #cccaca;
 
 /*MIXIN*/
 @mixin mixinCaja($b-position:center,$ancho,$alto,$b-repeat:no-repeat){

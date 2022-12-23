@@ -55,6 +55,7 @@ $imagen:(
     font-style: oblique;
     color: #f3f3f3;
 }
+
 .texto-footer{
     color:$color-footer;
 }
@@ -72,32 +73,12 @@ $imagen:(
 
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
 @media (max-width:768px) { 
-.titulos1{
-    font-size: 2em;
-    text-align: center;
-    text-shadow: 1px 1px 5px white;
-}
-
-.titulos2{
-    font-size: 1.3rem;
-}
-.textos{
-    font-size: 0.8rem;
-}
-.carousel-item{
-    height: 30vh;
-}
-}
-
-
-/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
-
-@media (max-width: 576px) {
     .titulos1{
         font-size: 2em;
         text-align: center;
         text-shadow: 1px 1px 5px white;
     }
+    
     .titulos2{
         font-size: 1.3rem;
     }
@@ -105,7 +86,28 @@ $imagen:(
         font-size: 0.8rem;
     }
     .carousel-item{
-        height: 25vh;
+        height: 30vh;
     }
-
-}
+    }
+    
+    
+    /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+    
+    @media (max-width: 576px) {
+        .titulos1{
+            font-size: 2em;
+            text-align: center;
+            text-shadow: 1px 1px 5px white;
+        }
+        .titulos2 {
+            font-size: 1.5rem; 
+        }
+        .textos {
+            justify-content: center;
+            font-size: 1rem; 
+        }
+        .carousel-item{
+            height: 25vh;
+        }
+    
+    }
